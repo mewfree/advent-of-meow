@@ -1,20 +1,16 @@
 input = 3113322113
 
 def read(int)
-  # actually stole that from Stack Overflow, so follow the link for more explanation:
+  # actually stole that from Stack Overflow, so follow this URL for more explanation:
   # http://stackoverflow.com/questions/9292338/ruby-split-string-by-repeating-characters-or-a-space
   int = int.to_s.scan(/((\d)\2*)/).map(&:first)
 
-  def aloud(int, i)
-    return int[i].length.to_s + int[i][0].to_s
-  end
-
-  r = ''
+  r = Array.new
   for i in 0..int.length-1
-    r = r + aloud(int, i)
+    r.push(int[i].length, int[i][0])
   end
 
-  return r
+  return r.join
 end
 
 i = 0
