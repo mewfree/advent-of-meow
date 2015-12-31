@@ -1,0 +1,14 @@
+{
+  "name": "day-12",
+  "version": "0.0.1",
+  "description": "",
+  "main": "day-12.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.19.0"
+  }
+}
