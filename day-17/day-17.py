@@ -15,8 +15,16 @@ def sum150(list):
             count += 1
     return count
 
+# Part 1
 count = 0
 for length in range(1, len(containers)):
     count += sum150(list(itertools.combinations(containers, length)))
 
 print(count)
+
+# Part 2
+for length in range(1, len(containers)):
+    count = sum150(list(itertools.combinations(containers, length)))
+    if count > 0:
+        print(count)
+        break
